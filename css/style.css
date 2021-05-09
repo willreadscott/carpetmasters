@@ -458,13 +458,6 @@ button
 
 
 /*------------------
-
-Language
-
---------------------*/
-
-
-/*------------------
   Header section
 ---------------------*/
 
@@ -497,7 +490,13 @@ Language
 
 .main-menu {
     float: right;
-    margin-right: 170px;
+    overflow: hidden !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    background-color: #000 !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .main-menu ul {
@@ -2754,9 +2753,6 @@ Roadmap
 /* Medium screen : 992px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .main-menu {
-        margin-right: 90px;
-    }
     .hero-slider .owl-dots {
         max-width: 930px;
     }
@@ -2817,12 +2813,6 @@ Roadmap
     }
     .site-logo {
         max-width: 130px;
-    }
-    .main-menu {
-        margin-right: 25px;
-    }
-    .main-menu ul li a {
-        margin-left: 15px;
     }
     .user-panel {
         padding: 8px 15px;
@@ -3018,24 +3008,6 @@ Roadmap
     .site-logo {
         float: none;
         padding-top: 0;
-    }
-    .main-menu {
-        display: none;
-        position: absolute;
-        top: calc(100% + 0px);
-        left: 0;
-        width: 100%;
-        background: #ffffff;
-        z-index: 999;
-    }
-    .main-menu ul li {
-        display: block;
-        border-bottom: 1px solid #ececec;
-    }
-    .main-menu ul li a {
-        margin-left: 0;
-        color: #131313;
-        padding: 13px 26px;
     }
     .nav-switch {
         color: #fff;
